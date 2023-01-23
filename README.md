@@ -1,2 +1,1 @@
-# laravelservicerepository
-Laravel Service Repository Pattern Package
+# Laravel Service Repository Pattern Package
