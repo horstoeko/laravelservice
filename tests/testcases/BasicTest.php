@@ -1,6 +1,6 @@
 <?php
 
-namespace horstoeko\laravelextendedcommand\tests\testcases;
+namespace horstoeko\laravelservicerepository\tests\testcases;
 
 use horstoeko\laravelservicerepository\tests\TestCase;
 
