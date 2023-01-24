@@ -39,7 +39,20 @@
         "phpunit/phpunit": "^9",
         "sebastian/phpcpd": "^6",
         "squizlabs/php_codesniffer": "^3",
-        "theseer/phpdox": "^0"
+        "theseer/phpdox": "^0",
+        "illuminate/bus": ">=5.7",
+        "illuminate/contracts": ">=5.7",
+        "illuminate/database": ">=5.7",
+        "illuminate/http": ">=5.7",
+        "illuminate/pagination": ">=5.7",
+        "illuminate/support": ">=5.7"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "horstoeko\\laravelservicerepository\\LSRServiceProvider"
+            ]
+        }
     },
     "scripts": {
         "tests": "./vendor/bin/phpunit ./tests/",
