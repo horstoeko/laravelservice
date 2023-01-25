@@ -1,0 +1,21 @@
+<?php
+
+namespace {{ namespace }};
+
+use App\Repositories\{{repository_name}};
+
+class {{ class }}
+{
+    /**
+     * @var App\Repositories\{{repository_name}}
+     */
+    protected $repository;
+
+    /**
+     * Constructor
+     */
+    public function __construct({{repository_name}} $repository)
+    {
+        $this->repository = $repository;
+    }
+}
