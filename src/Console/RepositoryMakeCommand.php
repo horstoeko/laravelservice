@@ -72,4 +72,20 @@ class RepositoryMakeCommand extends GeneratorCommand
     {
         return sprintf("%s%s", trim($this->argument('name')), "Repository");
     }
+
+    /**
+     * Replace the class name for the given stub.
+     *
+     * @param  string  $stub
+     * @param  string  $name
+     * @return string
+     */
+    protected function replaceClass($stub, $name)
+    {
+        $stub = parent::replaceClass($stub, $name);
+
+        $stub = str_replace('{{modelclass}}', trim($this->argument('name')), $stub);
+
+        return $stub;
+    }
 }

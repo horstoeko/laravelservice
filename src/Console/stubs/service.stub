@@ -3,19 +3,12 @@
 namespace {{ namespace }};
 
 use App\Repositories\{{repository_name}};
+use horstoeko\laravelservicerepository\Service\BaseService;
 
-class {{ class }}
+class {{ class }} extends BaseService
 {
     /**
-     * @var App\Repositories\{{repository_name}}
+     * @inheritDoc
      */
-    protected $repository;
-
-    /**
-     * Constructor
-     */
-    public function __construct({{repository_name}} $repository)
-    {
-        $this->repository = $repository;
-    }
+    protected $repository = {{repository_name}}::class;
 }

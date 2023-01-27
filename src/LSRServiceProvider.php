@@ -3,8 +3,8 @@
 namespace horstoeko\laravelservicerepository;
 
 use Illuminate\Support\ServiceProvider;
-use horstoeko\laravelservicerepository\console\ServiceMakeCommand;
-use horstoeko\laravelservicerepository\console\RepositoryMakeCommand;
+use horstoeko\laravelservicerepository\Console\ServiceMakeCommand;
+use horstoeko\laravelservicerepository\Console\RepositoryMakeCommand;
 
 /**
  * Class LSRServiceProvider

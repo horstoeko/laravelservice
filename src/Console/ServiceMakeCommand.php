@@ -101,7 +101,9 @@ class ServiceMakeCommand extends GeneratorCommand
     {
         $stub = parent::replaceClass($stub, $name);
 
-        return str_replace('{{repository_name}}', sprintf("%s%s", trim($this->argument('name')), "Repository"), $stub);
+        $stub = str_replace('{{repository_name}}', sprintf("%s%s", trim($this->argument('name')), "Repository"), $stub);
+
+        return $stub;
     }
 
     /**
