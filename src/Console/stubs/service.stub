@@ -2,8 +2,10 @@
 
 namespace {{ namespace }};
 
-use horstoeko\laravelservice\Service\BaseService;
+use App\Models\{{modelclass}};
+use horstoeko\laravelservice\Services\BaseService;
 
 class {{ class }} extends BaseService
 {
+    protected $modelClass = {{modelclass}}::class;
 }

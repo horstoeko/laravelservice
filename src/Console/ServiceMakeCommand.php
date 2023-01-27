@@ -29,6 +29,22 @@ class ServiceMakeCommand extends GeneratorCommand
     protected $type = 'Service';
 
     /**
+     * Execute the console command.
+     *
+     * @return void
+     */
+    public function handle()
+    {
+        if (parent::handle() === false && ! $this->option('force')) {
+            return false;
+        }
+
+        if ($this->option('policy')) {
+            $this->createPolicy();
+        }
+    }
+
+    /**
      * Get the console command options.
      *
      * @return array
@@ -36,6 +52,7 @@ class ServiceMakeCommand extends GeneratorCommand
     protected function getOptions()
     {
         return [
+            ['policy', null, InputOption::VALUE_NONE, 'Create a policy class'],
             ['force', null, InputOption::VALUE_NONE, 'Create the class even if the service already exists'],
         ];
     }
@@ -84,6 +101,21 @@ class ServiceMakeCommand extends GeneratorCommand
     {
         $stub = parent::replaceClass($stub, $name);
 
+        $stub = str_replace('{{modelclass}}', trim($this->argument('name')), $stub);
+
         return $stub;
+    }
+
+    /**
+     * Create policy
+     *
+     * @return void
+     */
+    protected function createPolicy()
+    {
+        $this->call('make:policy', array_filter([
+            'name' => $this->argument('name') . "Policy",
+            '--model' => $this->argument('name'),
+        ]));
     }
 }
