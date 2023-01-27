@@ -1,6 +1,6 @@
 <?php
 
-namespace horstoeko\laravelservicerepository\console;
+namespace horstoeko\laravelservicerepository\Console;
 
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputOption;
