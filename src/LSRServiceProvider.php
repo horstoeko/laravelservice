@@ -1,10 +1,9 @@
 <?php
 
-namespace horstoeko\laravelservicerepository;
+namespace horstoeko\laravelservice;
 
 use Illuminate\Support\ServiceProvider;
-use horstoeko\laravelservicerepository\Console\ServiceMakeCommand;
-use horstoeko\laravelservicerepository\Console\RepositoryMakeCommand;
+use horstoeko\laravelservice\Console\ServiceMakeCommand;
 
 /**
  * Class LSRServiceProvider
@@ -25,8 +24,7 @@ class LSRServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                ServiceMakeCommand::class,
-                RepositoryMakeCommand::class,
+                ServiceMakeCommand::class
             ]);
         }
     }

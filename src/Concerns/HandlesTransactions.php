@@ -1,6 +1,6 @@
 <?php
 
-namespace horstoeko\laravelservicerepository\Concerns;
+namespace horstoeko\laravelservice\Concerns;
 
 use Illuminate\Support\Facades\DB;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace horstoeko\laravelservicerepository\Console;
+namespace horstoeko\laravelservice\Console;
 
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputOption;
@@ -29,22 +29,6 @@ class ServiceMakeCommand extends GeneratorCommand
     protected $type = 'Service';
 
     /**
-     * Execute the console command.
-     *
-     * @return void
-     */
-    public function handle()
-    {
-        if (parent::handle() === false && ! $this->option('force')) {
-            return false;
-        }
-
-        if ($this->option('repository')) {
-            $this->createRepository();
-        }
-    }
-
-    /**
      * Get the console command options.
      *
      * @return array
@@ -53,7 +37,6 @@ class ServiceMakeCommand extends GeneratorCommand
     {
         return [
             ['force', null, InputOption::VALUE_NONE, 'Create the class even if the service already exists'],
-            ['repository', 'r', InputOption::VALUE_NONE, 'Create a new repository'],
         ];
     }
 
@@ -101,21 +84,6 @@ class ServiceMakeCommand extends GeneratorCommand
     {
         $stub = parent::replaceClass($stub, $name);
 
-        $stub = str_replace('{{repository_name}}', sprintf("%s%s", trim($this->argument('name')), "Repository"), $stub);
-
         return $stub;
-    }
-
-    /**
-     * Create repository
-     *
-     * @return void
-     */
-    protected function createRepository()
-    {
-        $this->call('lsr:make:repository', array_filter([
-            'name' => $this->argument('name'),
-            '--force' => $this->option('force'),
-        ]));
     }
 }

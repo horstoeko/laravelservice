@@ -1,31 +1,16 @@
 <?php
 
-namespace horstoeko\laravelservicerepository\Service;
+namespace horstoeko\laravelservice\Service;
 
 use Illuminate\Support\Facades\App;
 
 class BaseService
 {
     /**
-     * The repository class
-     *
-     * @var string
-     */
-    protected $repositoryClass = "";
-
-    /**
-     * The repository
-     *
-     * @var BaseRepository
-     */
-    protected $repository;
-
-    /**
      * Constructor
      */
     public function __construct()
     {
-        $this->repository = App::make($this->resolveRepositoryClass());
     }
 
     /**
@@ -33,8 +18,8 @@ class BaseService
      *
      * @return string
      */
-    protected function resolveRepositoryClass(): string
+    protected function resolveModelClass(): string
     {
-        return $this->repositoryClass;
+        //return $this->repositoryClass;
     }
 }

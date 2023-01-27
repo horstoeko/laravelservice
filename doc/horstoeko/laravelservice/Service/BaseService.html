@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>horstoeko\laravelservicerepository\LSRServiceProvider | horstoeko/Extended Laravel Command</title>
+    <title>horstoeko\laravelservice\Service\BaseService | horstoeko/Extended Laravel Command</title>
 
-            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
-        <script src="../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../js/bootstrap.min.js"></script>
-        <script src="../../js/typeahead.min.js"></script>
-        <script src="../../sami.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
@@ -19,14 +19,14 @@
     
     </head>
 
-    <body id="class" data-name="class:horstoeko_laravelservicerepository_LSRServiceProvider" data-root-path="../../">
+    <body id="class" data-name="class:horstoeko_laravelservice_Service_BaseService" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
-        <form id="search-form" action="../../search.html" method="GET">
+        <form id="search-form" action="../../../search.html" method="GET">
             <span class="glyphicon glyphicon-search"></span>
             <input name="search"
                    class="typeahead form-control"
@@ -48,16 +48,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../index.html">horstoeko/Extended Laravel Command</a>
+                <a class="navbar-brand" href="../../../index.html">horstoeko/Extended Laravel Command</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
-                    <li><a href="../../classes.html">Classes</a></li>
-                                            <li><a href="../../namespaces.html">Namespaces</a></li>
-                                        <li><a href="../../interfaces.html">Interfaces</a></li>
-                    <li><a href="../../traits.html">Traits</a></li>
-                    <li><a href="../../doc-index.html">Index</a></li>
-                    <li><a href="../../search.html">Search</a></li>
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
                 </ul>
             </div>
         </div>
@@ -66,27 +66,25 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../horstoeko.html">horstoeko</a></li><li class="backslash">\</li><li><a href="../../horstoeko/laravelservicerepository.html">laravelservicerepository</a></li><li class="backslash">\</li><li>LSRServiceProvider</li>
+                        <li><a href="../../../horstoeko.html">horstoeko</a></li><li class="backslash">\</li><li><a href="../../../horstoeko/laravelservice.html">laravelservice</a></li><li class="backslash">\</li><li><a href="../../../horstoeko/laravelservice/Service.html">Service</a></li><li class="backslash">\</li><li>BaseService</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            LSRServiceProvider
+            BaseService
                 
         </h1>
     </div>
 
     <p>    class
-    <strong>LSRServiceProvider</strong>        extends <abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>
+    <strong>BaseService</strong>
 </p>
 
         
     
 
-            <div class="description">
-            <p>Class LSRServiceProvider</p>                                </div>
     
     
     
@@ -96,24 +94,22 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_register">register</a>()
+                    <a href="#method___construct">__construct</a>()
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Constructor</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_boot">boot</a>()
+                    <a href="#method_resolveModelClass">resolveModelClass</a>()
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Resolve the classname of the repository</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -123,27 +119,20 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_register">
-        <div class="location">at         line 15</div>
-        <code>                    void
-    <strong>register</strong>()
+                    <h3 id="method___construct">
+        <div class="location">at         line 12</div>
+        <code>                    
+    <strong>__construct</strong>()
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Constructor</p>                                                </div>
                 <div class="tags">
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -151,23 +140,25 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_boot">
-        <div class="location">at         line 22</div>
-        <code>                    void
-    <strong>boot</strong>()
+                    <h3 id="method_resolveModelClass">
+        <div class="location">at         line 21</div>
+        <code>            protected        string
+    <strong>resolveModelClass</strong>()
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Resolve the classname of the repository</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td>string</td>
             <td></td>
         </tr>
     </table>

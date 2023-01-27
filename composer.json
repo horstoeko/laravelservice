@@ -1,8 +1,8 @@
 {
-    "name": "horstoeko/laravelservicerepository",
+    "name": "horstoeko/laravelservice",
     "keywords": ["Laravel","Service","Repository"],
-    "description": "A library containing basic for a Service-Repository-Pattern",
-    "homepage": "https://github.com/horstoeko/laravelservicerepository",
+    "description": "A library containing basic for a Service-Pattern",
+    "homepage": "https://github.com/horstoeko/laravelservice",
     "type": "package",
     "license": "MIT",
     "prefer-stable": true,
@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "horstoeko\\laravelservicerepository\\": "src"
+            "horstoeko\\laravelservice\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "horstoeko\\laravelservicerepository\\tests\\": "tests"
+            "horstoeko\\laravelservice\\tests\\": "tests"
         }
     },
     "require": {
@@ -50,7 +50,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "horstoeko\\laravelservicerepository\\LSRServiceProvider"
+                "horstoeko\\laravelservice\\LSRServiceProvider"
             ]
         }
     },

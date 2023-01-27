@@ -1,8 +1,8 @@
 <?php
 
-namespace horstoeko\laravelservicerepository\tests\testcases;
+namespace horstoeko\laravelservice\tests\testcases;
 
-use horstoeko\laravelservicerepository\tests\TestCase;
+use horstoeko\laravelservice\tests\TestCase;
 
 class BasicTest extends TestCase
 {

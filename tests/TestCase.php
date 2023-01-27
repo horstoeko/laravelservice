@@ -1,6 +1,6 @@
 <?php
 
-namespace horstoeko\laravelservicerepository\tests;
+namespace horstoeko\laravelservice\tests;
 
 use ReflectionClass;
 use ReflectionMethod;
